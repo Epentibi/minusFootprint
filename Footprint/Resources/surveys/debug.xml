@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<survey name = "Debug" topic = "3" id = "Debug">
+<survey_module>
+    <id>0</id>
+    <question>Do you want to improve your transportation lifestyle ?</question>
+    <choices>
+        <choice>
+            <description>Maybe</description>>
+            <additionalValue>1</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+        <choice>
+            <description>No</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>0</returnValue>
+        </choice>        
+    </choices>
+</survey_module>
+    
+<survey_module>
+    <id>1</id>
+    <question>Are you sure?</question>
+    <choices>
+        <choice>
+            <description>Yes</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>1</returnValue>
+        </choice>        
+    </choices>
+</survey_module>
+</survey>

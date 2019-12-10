@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<surveys>
+    <survey name = "Food Waste" localization = ""></survey>
+    <survey name = "Meat Consumption" localization = ""></survey>
+    <survey name = "Daily Transportation" localization = ""></survey>
+</surveys>

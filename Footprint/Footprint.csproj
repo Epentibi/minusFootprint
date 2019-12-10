@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.3.6.0.264807\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.6.0.264807\build\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{8763D9EB-2AA0-44DB-8C49-818A0562B41B}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Footprint</RootNamespace>
+    <AssemblyName>Footprint</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Hua Yang (E2HB5AU5MS)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>19366</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+<MtouchSdkVersion>12.4</MtouchSdkVersion>
+<CodesignProvision>VS: WildCard Development</CodesignProvision>
+<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+<MtouchExtraArgs>--linkskip=Syncfusion.XlsIO.Portable --linkskip=Syncfusion.XlsIO --linkskip=MySql.Data.Entity</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Hua Yang (E2HB5AU5MS)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchSdkVersion>12.4</MtouchSdkVersion>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchExtraArgs>--linkskip=Syncfusion.XlsIO.Portable --linkskip=Syncfusion.XlsIO --linkskip=MySql.Data.Entity</MtouchExtraArgs>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Hua Yang (E2HB5AU5MS)</CodesignKey>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+<MtouchFloat32>true</MtouchFloat32>
+<CodesignProvision>VS: WildCard Development</CodesignProvision>
+<MtouchExtraArgs>--linkskip=Syncfusion.XlsIO.Portable --linkskip=Syncfusion.XlsIO --linkskip=MySql.Data.Entity</MtouchExtraArgs>
+<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+<MtouchUseLlvm>true</MtouchUseLlvm>
+<MtouchFastDev></MtouchFastDev>
+<IpaMetadata></IpaMetadata>
+<WarningsNotAsErrors></WarningsNotAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Hua Yang (E2HB5AU5MS)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <IOSDebuggerPort>18176</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchExtraArgs>--linkskip=Syncfusion.XlsIO.Portable --linkskip=Syncfusion.XlsIO --linkskip=MySql.Data.Entity</MtouchExtraArgs>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>minusFootprint Developer Provision</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.3.6.0.264807\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.3.6.0.264807\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.3.6.0.264807\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.3.6.0.264807\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\netstandard2.0\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\netstandard2.0\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>..\packages\Syncfusion.Licensing.17.1.0.53\lib\Xamarin.iOS10\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Portable">
+      <HintPath>..\packages\Syncfusion.Xamarin.Compression.17.1.0.53\lib\netstandard2.0\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Portable">
+      <HintPath>..\packages\Syncfusion.Xamarin.XlsIO.17.1.0.53\lib\netstandard2.0\Syncfusion.XlsIO.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>packages\System.Configuration.ConfigurationManager.4.4.1\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="SshNet.Security.Cryptography">
+      <HintPath>packages\SshNet.Security.Cryptography.1.2.0\lib\netstandard1.3\SshNet.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>packages\System.Security.Principal.Windows.4.4.0\lib\netstandard2.0\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>packages\System.Security.AccessControl.4.4.0\lib\netstandard2.0\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>packages\System.Security.Permissions.4.4.1\lib\netstandard2.0\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>packages\BouncyCastle.NetCore.1.8.3\lib\xamarinios\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>packages\Google.Protobuf.3.6.1\lib\netstandard1.0\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet">
+      <HintPath>packages\SSH.NET.2016.1.0\lib\netstandard1.3\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Buffers">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector">
+      <HintPath>packages\MySqlConnector.0.56.0\lib\netstandard2.0\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Calabash">
+      <HintPath>packages\Xamarin.TestCloud.Agent.0.21.8\lib\Xamarin.iOS\Calabash.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-4.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-5.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-6.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-7.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-8.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-9.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-10.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-12.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-13.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-14.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-15.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-16.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appicon-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\SF\" />
+    <Folder Include="Image\" />
+    <Folder Include="Image\Challenge\" />
+    <Folder Include="Image\ChallengeArt\" />
+    <Folder Include="Image\Achievements\" />
+    <Folder Include="Image\Me_Icons\" />
+    <Folder Include="Resources\zh-Hans.lproj\" />
+    <Folder Include="Resources\en.lproj\" />
+    <Folder Include="Image\ChallengeTopic\" />
+    <Folder Include="Image\ChallengeTopic\0\" />
+    <Folder Include="Image\ChallengeTopic\1\" />
+    <Folder Include="Image\ChallengeTopic\3\" />
+    <Folder Include="Image\ChallengeTopic\4\" />
+    <Folder Include="Image\ChallengeTopic\5\" />
+    <Folder Include="Image\ChallengeTopic\6\" />
+    <Folder Include="Image\ChallengeTopic\7\" />
+    <Folder Include="Image\ChallengeTopic\8\" />
+    <Folder Include="Image\ChallengeTopic\9\" />
+    <Folder Include="Base.lproj\" />
+    <Folder Include="Resources\surveys\" />
+    <Folder Include="Image\Discover\" />
+    <Folder Include="Image\TabBars\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Base.lproj\Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="Survey_en.xml" />
+    <None Include="editorPick.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Survey.cs" />
+    <Compile Include="Filewrite.cs" />
+    <Compile Include="Challenges.cs" />
+    <Compile Include="ChallengePage.cs" />
+    <Compile Include="ChallengePage.designer.cs">
+      <DependentUpon>ChallengePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeTableViewSource.cs" />
+    <Compile Include="ChallengeDetail.cs" />
+    <Compile Include="ChallengeDetail.designer.cs">
+      <DependentUpon>ChallengeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daily.cs" />
+    <Compile Include="Daily.designer.cs">
+      <DependentUpon>Daily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChallenge.cs" />
+    <Compile Include="DailyChallenge.designer.cs">
+      <DependentUpon>DailyChallenge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyChallengeTableView.cs" />
+    <Compile Include="CustomCell.cs" />
+    <Compile Include="CustomCell.designer.cs">
+      <DependentUpon>CustomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Achievements.cs" />
+    <Compile Include="Achievements.designer.cs">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCellLabel.cs" />
+    <Compile Include="CustomCellLabel.designer.cs">
+      <DependentUpon>CustomCellLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipLibrary.cs" />
+    <Compile Include="TabBarController.cs" />
+    <Compile Include="TabBarController.designer.cs">
+      <DependentUpon>TabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchievementCell.cs" />
+    <Compile Include="AchievementCell.designer.cs">
+      <DependentUpon>AchievementCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchievementManager.cs" />
+    <Compile Include="AchievementCollectionSource.cs" />
+    <Compile Include="AchievementDetail.cs" />
+    <Compile Include="AchievementDetail.designer.cs">
+      <DependentUpon>AchievementDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Me.cs" />
+    <Compile Include="Me.designer.cs">
+      <DependentUpon>Me.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JustCell.cs" />
+    <Compile Include="JustCell.designer.cs">
+      <DependentUpon>JustCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JustTableView.cs" />
+    <Compile Include="JustTableView.designer.cs">
+      <DependentUpon>JustTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JustTableViewSource.cs" />
+    <Compile Include="ExcelReaderTest.cs" />
+    <Compile Include="About.cs" />
+    <Compile Include="About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipCell.cs" />
+    <Compile Include="TipCell.designer.cs">
+      <DependentUpon>TipCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipDaily.cs" />
+    <Compile Include="TipDaily.designer.cs">
+      <DependentUpon>TipDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HubDaily.cs" />
+    <Compile Include="HubDaily.designer.cs">
+      <DependentUpon>HubDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\DailyTip.cs" />
+    <Compile Include="Base.lproj\DailyTip.designer.cs">
+      <DependentUpon>DailyTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyClass.cs" />
+    <Compile Include="challengeRecognizer.cs" />
+    <Compile Include="Base.lproj\ChallengeComplete.cs" />
+    <Compile Include="Base.lproj\ChallengeComplete.designer.cs">
+      <DependentUpon>ChallengeComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\AchievementUnlock.cs" />
+    <Compile Include="Base.lproj\AchievementUnlock.designer.cs">
+      <DependentUpon>AchievementUnlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\UsernameChange.cs" />
+    <Compile Include="Base.lproj\UsernameChange.designer.cs">
+      <DependentUpon>UsernameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\SurveyView.cs" />
+    <Compile Include="Base.lproj\SurveyView.designer.cs">
+      <DependentUpon>SurveyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="colorManager.cs" />
+    <Compile Include="SurveyClass.cs" />
+    <Compile Include="SurveyPicker.cs" />
+    <Compile Include="Base.lproj\SurveyMenu.cs" />
+    <Compile Include="Base.lproj\SurveyMenu.designer.cs">
+      <DependentUpon>SurveyMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyCatalogTableSource.cs" />
+    <Compile Include="Base.lproj\Discover.cs" />
+    <Compile Include="Base.lproj\Discover.designer.cs">
+      <DependentUpon>Discover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiscoverCollectionSource.cs" />
+    <Compile Include="DiscoverCell.cs" />
+    <Compile Include="DiscoverCollectionFlowLayout.cs" />
+    <Compile Include="DiscoverCollectionScroll.cs" />
+    <Compile Include="DiscoverFlowLayout.cs" />
+    <Compile Include="SmallDiscoverCell.cs" />
+    <Compile Include="SmallDiscoverCollectionSource.cs" />
+    <Compile Include="SmallDiscoverFlowLayout.cs" />
+    <Compile Include="DiscoverModule.cs" />
+    <Compile Include="DiscoverChallengeModule.cs" />
+    <Compile Include="imageManager.cs" />
+    <Compile Include="DiscoveryCentral.cs" />
+    <Compile Include="DiscoverBrowseModule.cs" />
+    <Compile Include="DiscoverRecommendationModule.cs" />
+    <Compile Include="IListExtensions.cs" />
+    <Compile Include="DiscoverTipsModule.cs" />
+    <Compile Include="DiscoverSuggestTipModule.cs" />
+    <Compile Include="Base.lproj\DiscoverDetail.cs" />
+    <Compile Include="Base.lproj\DiscoverDetail.designer.cs">
+      <DependentUpon>DiscoverDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiscoverTopPickModule.cs" />
+    <Compile Include="SQLConnector.cs" />
+    <Compile Include="DiscoverEditorPickModule.cs" />
+    <Compile Include="FeatureModule.cs" />
+    <Compile Include="FeatureModule_September10.cs" />
+    <Compile Include="customTapManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SF\System-San-Francisco-Display-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SF\System San Francisco Display Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SF\System San Francisco Display Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SF\System San Francisco Display Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SF\System San Francisco Display Ultralight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\TableCellLight.swift" />
+    <BundleResource Include="Image\Challenge\Condition.png" />
+    <BundleResource Include="Image\Challenge\Daily.png" />
+    <BundleResource Include="Image\Challenge\ForceDaily.png" />
+    <BundleResource Include="Image\Challenge\OneTime.png" />
+    <BundleResource Include="Image\Challenge\Add.png" />
+    <BundleResource Include="Image\ChallengeArt\Metro-Man.png" />
+    <BundleResource Include="Image\Challenge\DailyTransport.png" />
+    <BundleResource Include="Image\Challenge\FoodPrice.png" />
+    <BundleResource Include="Image\Challenge\FoodSource.png" />
+    <BundleResource Include="Image\Challenge\FoodWaste.png" />
+    <BundleResource Include="Image\Challenge\OccasionalTransport.png" />
+    <BundleResource Include="Image\Gradient.png" />
+    <BundleResource Include="Image\LoadGradient.png" />
+    <BundleResource Include="Image\MinusFootPrint Icon Alpha.png" />
+    <BundleResource Include="Image\backgroundBar.png" />
+    <BundleResource Include="Image\ProgressBar.png" />
+    <BundleResource Include="Image\Achievements\1st Challenge.png" />
+    <BundleResource Include="Image\Achievements\10th Challenge.png" />
+    <BundleResource Include="Image\Achievements\20th Challenge.png" />
+    <BundleResource Include="Image\Achievements\50th Challenge.png" />
+    <BundleResource Include="Image\Challenge\Enviroment.png" />
+    <BundleResource Include="Image\ChallengeArt\All Aboard!.png" />
+    <BundleResource Include="Image\ChallengeArt\DailyTransport.png" />
+    <BundleResource Include="Image\ChallengeArt\Enviroment.png" />
+    <BundleResource Include="Image\ChallengeArt\FoodPrice.png" />
+    <BundleResource Include="Image\ChallengeArt\FoodSource.png" />
+    <BundleResource Include="Image\ChallengeArt\FoodWaste.png" />
+    <BundleResource Include="Image\ChallengeArt\OccasionalTransport.png" />
+    <BundleResource Include="Image\Me_Icons\Achievement.png" />
+    <BundleResource Include="Image\Me_Icons\About.png" />
+    <BundleResource Include="Image\Me_Icons\More.png" />
+    <BundleResource Include="Image\Me_Icons\Survey.png" />
+    <BundleResource Include="Image\Me_Icons\Avatar_Null.png" />
+    <BundleResource Include="Image\ChallengeArt\EnergyConsumption.png" />
+    <BundleResource Include="Image\ChallengeArt\GarbageManagement.png" />
+    <BundleResource Include="Image\ChallengeArt\PaperUsage.png" />
+    <BundleResource Include="Image\ChallengeArt\PlasticUsage.png" />
+    <BundleResource Include="Image\minusFootprint Icon Preview.png" />
+    <BundleResource Include="Resources\zh-Hans.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\zh-Hans.lproj\Main.strings" />
+    <BundleResource Include="Image\Challenge\EnergyConsumption.png" />
+    <BundleResource Include="Image\Challenge\GarbageManagement.png" />
+    <BundleResource Include="Image\Challenge\PaperUsage.png" />
+    <BundleResource Include="Image\Challenge\PlasticUsage.png" />
+    <BundleResource Include="Image\ChallengeTopic\0\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\0\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\0\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\0\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\0\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\0\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\1\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\1\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\1\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\1\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\1\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\6\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\6\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\6\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\6\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\6\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\6\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\5\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\5\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\5\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\5\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\5\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\5\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\4\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\4\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\4\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\4\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\4\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\4\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\3\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\3\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\3\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\3\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\3\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\3\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\8\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\8\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\8\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\8\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\8\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\8\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\7\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\7\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\7\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\7\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\7\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\7\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\9\0.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\9\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\9\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\9\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\9\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\9\4.jpg" />
+    <BundleResource Include="Resources\zh-Hans.lproj\InfoPlist.strings" />
+    <BundleResource Include="Image\ChallengeTopic\1\0.jpg" />
+    <BundleResource Include="Resources\zh-Hans.lproj\MainInterface.strings" />
+    <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Image\Achievements\null.png" />
+    <BundleResource Include="Image\Discover\Article.png" />
+    <BundleResource Include="Image\Discover\Challenge.png" />
+    <BundleResource Include="Image\Discover\Tip.png" />
+    <BundleResource Include="Image\TabBars\Tab_Achievements.png" />
+    <BundleResource Include="Image\TabBars\Tab_Achievements%402x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Achievements%403x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Daily.png" />
+    <BundleResource Include="Image\TabBars\Tab_Daily%402x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Daily%403x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Flag.png" />
+    <BundleResource Include="Image\TabBars\Tab_Flag%402x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Flag%403x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Me.png" />
+    <BundleResource Include="Image\TabBars\Tab_Me%402x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Me%403x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Survey.png" />
+    <BundleResource Include="Image\TabBars\Tab_Survey%402x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Survey%403x.png" />
+    <BundleResource Include="Image\Discover\Info.png" />
+    <BundleResource Include="Image\Discover\Loading.png" />
+    <BundleResource Include="Image\Discover\Warning.png" />
+    <BundleResource Include="Image\TabBars\Tab_Discover%403x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Discover%402x.png" />
+    <BundleResource Include="Image\TabBars\Tab_Discover.png" />
+    <BundleResource Include="Image\Challenge\Challenges.png" />
+    <BundleResource Include="Image\ChallengeTopic\2\4.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\2\5.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\2\2.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\2\3.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\2\1.jpg" />
+    <BundleResource Include="Image\ChallengeTopic\2\0.jpg" />
+    <BundleResource Include="Resources\FootprintUITests\FootprintUITests.swift" />
+    <BundleResource Include="Resources\FootprintUITests\Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\hi.txt" />
+    <EmbeddedResource Include="Resources\achievements.xlsx" />
+    <EmbeddedResource Include="Resources\database.xlsx" />
+    <EmbeddedResource Include="Resources\tips.xlsx" />
+    <EmbeddedResource Include="Resources\surveys\debug.xml" />
+    <EmbeddedResource Include="Resources\surveys\SurveyCatalog.xml" />
+    <EmbeddedResource Include="Resources\surveys\Food Waste.xml" />
+    <EmbeddedResource Include="Resources\surveys\Meat Consumption.xml" />
+    <EmbeddedResource Include="Resources\surveys\Daily Transportation.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.3.6.0.264807\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.6.0.264807\build\Xamarin.Forms.targets')" />
+</Project>

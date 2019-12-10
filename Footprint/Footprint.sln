@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Footprint", "Footprint.csproj", "{8763D9EB-2AA0-44DB-8C49-818A0562B41B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Release|iPhone.ActiveCfg = Release|iPhone
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Release|iPhone.Build.0 = Release|iPhone
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{8763D9EB-2AA0-44DB-8C49-818A0562B41B}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

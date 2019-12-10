@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<survey name = "Daily Transportation Survey" topic = "3" id = "Daily Transportation">
+<survey_module>
+    <id>0</id>
+    <question>What is your main mean of transport daily ?</question>
+    <choices>
+        <choice>
+            <description>Walking</description>>
+            <additionalValue>0</additionalValue>>
+            <jumpID>complete</jumpID>
+            <returnValue>0</returnValue>
+        </choice>
+        <choice>
+            <description>Biking</description>>
+            <additionalValue>0</additionalValue>>
+            <jumpID>complete</jumpID>
+            <returnValue>0</returnValue>
+        </choice>
+        <choice>
+            <description>Metro</description>>
+            <additionalValue>0</additionalValue>>
+            <jumpID>complete</jumpID>
+            <returnValue>1</returnValue>
+        </choice>
+        <choice>
+            <description>Bus</description>>
+            <additionalValue>0</additionalValue>>
+            <jumpID>complete</jumpID>
+            <returnValue>2</returnValue>
+        </choice>
+        <choice>
+            <description>Taxi</description>>
+            <additionalValue>0</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+        <choice>
+            <description>Car</description>>
+            <additionalValue>0</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+    </choices>
+</survey_module>
+    
+<survey_module>
+    <id>1</id>
+    <question>How often ?</question>
+    <choices>
+        <choice>
+            <description>~ 2 Per Day</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>3</returnValue>
+        </choice>
+        <choice>
+            <description>~ 4 Per Day</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>5</returnValue>
+        </choice> 
+        <choice>
+            <description>4 +</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>10</returnValue>
+        </choice> 
+    </choices>
+</survey_module>
+</survey>

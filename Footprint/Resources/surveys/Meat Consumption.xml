@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<survey name = "Meat Consumption Survey" topic = "0" id = "Meat Consumption">
+
+<survey_module>
+    <id>0</id>
+    <question>In a day, how many dishes of meat in average do you eat?</question>
+    <choices>
+        <choice>
+            <description>None</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>1</returnValue>
+        </choice>
+        <choice>
+            <description>1</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>2</returnValue>
+        </choice> 
+        <choice>
+            <description>2</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>3</returnValue>
+        </choice> 
+        <choice>
+            <description>3</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>4</returnValue>
+        </choice> 
+        <choice>
+            <description>4-6</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>6</returnValue>
+        </choice> 
+        <choice>
+            <description>6-10</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>8</returnValue>
+        </choice> 
+        <choice>
+            <description>10+</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>10</returnValue>
+        </choice> 
+    </choices>
+</survey_module>
+</survey>

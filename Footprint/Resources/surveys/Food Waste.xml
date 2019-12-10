@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<survey name = "Food Waste Survey" topic = "1" id = "Food Waste">
+<survey_module>
+    <id>0</id>
+    <question>How many meals in average do you waste food?</question>
+    <choices>
+        <choice>
+            <description>0</description>>
+            <additionalValue>1</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+        <choice>
+            <description>1</description>>
+            <additionalValue>1</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+        <choice>
+            <description>2</description>>
+            <additionalValue>2</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+        <choice>
+            <description>3</description>>
+            <additionalValue>3</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+        <choice>
+            <description>3 +</description>>
+            <additionalValue>4</additionalValue>>
+            <jumpID>1</jumpID>
+        </choice>
+    </choices>
+</survey_module>
+    
+<survey_module>
+    <id>1</id>
+    <question>About what percentage of food in your meals do you waste?</question>
+    <choices>
+        <choice>
+            <description>&lt; 10%</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>0</returnValue>
+        </choice>
+        <choice>
+            <description>&lt; 25%</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>1</returnValue>
+        </choice> 
+        <choice>
+            <description>~ 50%</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>3</returnValue>
+        </choice> 
+        <choice>
+            <description>&gt; 75%</description>>
+            <jumpID>complete</jumpID>
+            <returnValue>5</returnValue>
+        </choice> 
+    </choices>
+</survey_module>
+</survey>
